@@ -72,7 +72,8 @@ The output files created by the GNU time command and the CompAIRR log files cont
 The Python scripts [read_tool_benchmark_files.py](scripts/figures/read_tool_benchmark_files.py) and [read_compairr_log_files.py](scripts/figures/read_compairr_log_files.py)
 should first be used to parse the GNU time files and CompAIRR log files respectively. 
 The produced output files [tool_stats_agg.tsv](results/aggregated_results/tool_stats_agg.tsv) and [compairr_time_parts.tsv](results/aggregated_results/compairr_time_parts.tsv),
-as well as the files in the folder [emerson](results/emerson) are used by the R script [figures.R](scripts/figures/figures.R) to create the figures. 
+as well as the files in the folder [emerson](results/emerson) are used by the R script [figures.R](scripts/figures/figures.R) to create the figures, which can also
+be found in the folder [figures](results/figures).
 
 
 ## References
