@@ -1,0 +1,189 @@
+
+#1. 10 repertoires 1e5 sequences
+Loading required package: ggplot2
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: dtplyr
+Loading required package: data.table
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+Loading required package: patchwork
+
+== Step 1/3: loading repertoire files... ==
+
+Processing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10/" ...
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//metadata.txt" -- metadata
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_1.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_10.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_2.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_3.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_4.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_5.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_6.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_7.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_8.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_9.tsv" -- immunarch
+
+== Step 2/3: checking metadata files and merging files... ==
+
+Processing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10/" ...
+  -- Everything is OK!
+
+== Step 3/3: processing paired chain data... ==
+
+Done!
+
+exitcode 0
+user     15.67
+system   13.25
+elapsed  0:13.26
+maxrss   651192
+avgtext  0
+avgdata  0
+CPU      218%
+inputs   0
+outputs  8
+major    0
+minor    181708
+swaps    0
+
+#2. 10 repertoires 1e5 sequences
+Loading required package: ggplot2
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: dtplyr
+Loading required package: data.table
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+Loading required package: patchwork
+
+== Step 1/3: loading repertoire files... ==
+
+Processing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10/" ...
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//metadata.txt" -- metadata
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_1.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_10.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_2.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_3.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_4.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_5.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_6.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_7.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_8.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_9.tsv" -- immunarch
+
+== Step 2/3: checking metadata files and merging files... ==
+
+Processing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10/" ...
+  -- Everything is OK!
+
+== Step 3/3: processing paired chain data... ==
+
+Done!
+
+exitcode 0
+user     11.82
+system   10.76
+elapsed  0:10.35
+maxrss   744544
+avgtext  0
+avgdata  0
+CPU      218%
+inputs   313168
+outputs  16
+major    39
+minor    152419
+swaps    0
+
+#3. 10 repertoires 1e5 sequences
+Loading required package: ggplot2
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: dtplyr
+Loading required package: data.table
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+Loading required package: patchwork
+
+== Step 1/3: loading repertoire files... ==
+
+Processing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10/" ...
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//metadata.txt" -- metadata
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_1.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_10.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_2.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_3.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_4.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_5.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_6.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_7.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_8.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10//rep_9.tsv" -- immunarch
+
+== Step 2/3: checking metadata files and merging files... ==
+
+Processing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/10/" ...
+  -- Everything is OK!
+
+== Step 3/3: processing paired chain data... ==
+
+Done!
+
+exitcode 0
+user     11.22
+system   12.14
+elapsed  0:09.25
+maxrss   617020
+avgtext  0
+avgdata  0
+CPU      252%
+inputs   0
+outputs  16
+major    0
+minor    145700
+swaps    0

@@ -1,0 +1,15 @@
+
+#1. 100 repertoires 1e6 sequences
+exitcode 0
+user     12584.16
+system   163.30
+elapsed  3:34:48
+maxrss   35717268
+avgtext  0
+avgdata  0
+CPU      98%
+inputs   21266808
+outputs  440
+major    0
+minor    10651746
+swaps    0

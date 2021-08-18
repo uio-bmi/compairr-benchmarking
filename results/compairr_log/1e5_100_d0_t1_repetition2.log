@@ -1,0 +1,147 @@
+CompAIRR 1.3.1 - Comparison of Adaptive Immune Receptor Repertoires
+https://github.com/uio-bmi/compairr
+
+Start time:        Wed Jun 30 22:26:24 CEST 2021
+Command (m/c):     Overlap
+Repertoire set 1:  /storage/lonnekes/compairr_benchmark/compairr_data/1e5/100/repertoires_1e5_100.tsv
+Repertoire set 2:  (same as set 1)
+Nucleotides (n):   No
+Differences (d):   0
+Indels (i):        No
+Ignore counts (f): No
+Ignore genes (g):  Yes
+Threads (t):       1
+Output file (o):   /storage/lonnekes/compairr_benchmark/output/tool_outputs/compairr/output/1e5_100_d0_t1_repetition2.tsv
+Output format (a): Matrix
+Summands (s):      Product
+Pairs file (p):    (none)
+Log file (l):      tool_outputs/compairr/log/1e5_100_d0_t1_repetition2.log
+
+Immune receptor repertoire set 1
+
+Reading sequences: 100% (3s)
+Sequences:         10000000
+Residues:          207031685
+Shortest:          3
+Longest:           60
+Average length:    20.7
+Repertoires:       100
+Indexing:          100% (0s)
+Sorting:           100% (0s)
+
+Repertoires:
+  # Sequences    Count Repertoire ID
+  1    100000   100000 rep_1
+  2    100000   100000 rep_10
+  3    100000   100000 rep_100
+  4    100000   100000 rep_11
+  5    100000   100000 rep_12
+  6    100000   100000 rep_13
+  7    100000   100000 rep_14
+  8    100000   100000 rep_15
+  9    100000   100000 rep_16
+ 10    100000   100000 rep_17
+ 11    100000   100000 rep_18
+ 12    100000   100000 rep_19
+ 13    100000   100000 rep_2
+ 14    100000   100000 rep_20
+ 15    100000   100000 rep_21
+ 16    100000   100000 rep_22
+ 17    100000   100000 rep_23
+ 18    100000   100000 rep_24
+ 19    100000   100000 rep_25
+ 20    100000   100000 rep_26
+ 21    100000   100000 rep_27
+ 22    100000   100000 rep_28
+ 23    100000   100000 rep_29
+ 24    100000   100000 rep_3
+ 25    100000   100000 rep_30
+ 26    100000   100000 rep_31
+ 27    100000   100000 rep_32
+ 28    100000   100000 rep_33
+ 29    100000   100000 rep_34
+ 30    100000   100000 rep_35
+ 31    100000   100000 rep_36
+ 32    100000   100000 rep_37
+ 33    100000   100000 rep_38
+ 34    100000   100000 rep_39
+ 35    100000   100000 rep_4
+ 36    100000   100000 rep_40
+ 37    100000   100000 rep_41
+ 38    100000   100000 rep_42
+ 39    100000   100000 rep_43
+ 40    100000   100000 rep_44
+ 41    100000   100000 rep_45
+ 42    100000   100000 rep_46
+ 43    100000   100000 rep_47
+ 44    100000   100000 rep_48
+ 45    100000   100000 rep_49
+ 46    100000   100000 rep_5
+ 47    100000   100000 rep_50
+ 48    100000   100000 rep_51
+ 49    100000   100000 rep_52
+ 50    100000   100000 rep_53
+ 51    100000   100000 rep_54
+ 52    100000   100000 rep_55
+ 53    100000   100000 rep_56
+ 54    100000   100000 rep_57
+ 55    100000   100000 rep_58
+ 56    100000   100000 rep_59
+ 57    100000   100000 rep_6
+ 58    100000   100000 rep_60
+ 59    100000   100000 rep_61
+ 60    100000   100000 rep_62
+ 61    100000   100000 rep_63
+ 62    100000   100000 rep_64
+ 63    100000   100000 rep_65
+ 64    100000   100000 rep_66
+ 65    100000   100000 rep_67
+ 66    100000   100000 rep_68
+ 67    100000   100000 rep_69
+ 68    100000   100000 rep_7
+ 69    100000   100000 rep_70
+ 70    100000   100000 rep_71
+ 71    100000   100000 rep_72
+ 72    100000   100000 rep_73
+ 73    100000   100000 rep_74
+ 74    100000   100000 rep_75
+ 75    100000   100000 rep_76
+ 76    100000   100000 rep_77
+ 77    100000   100000 rep_78
+ 78    100000   100000 rep_79
+ 79    100000   100000 rep_8
+ 80    100000   100000 rep_80
+ 81    100000   100000 rep_81
+ 82    100000   100000 rep_82
+ 83    100000   100000 rep_83
+ 84    100000   100000 rep_84
+ 85    100000   100000 rep_85
+ 86    100000   100000 rep_86
+ 87    100000   100000 rep_87
+ 88    100000   100000 rep_88
+ 89    100000   100000 rep_89
+ 90    100000   100000 rep_9
+ 91    100000   100000 rep_90
+ 92    100000   100000 rep_91
+ 93    100000   100000 rep_92
+ 94    100000   100000 rep_93
+ 95    100000   100000 rep_94
+ 96    100000   100000 rep_95
+ 97    100000   100000 rep_96
+ 98    100000   100000 rep_97
+ 99    100000   100000 rep_98
+100    100000   100000 rep_99
+Sum  10000000 10000000
+
+Immune receptor repertoire set 2
+
+Set 2 is identical to set 1
+
+Unique V genes:    49
+Unique J genes:    6
+Computing hashes:  100% (0s)
+Hashing sequences: 100% (0s)
+Analysing:         100% (2s)
+Writing results:   100% (0s)
+
+End time:          Wed Jun 30 22:26:31 CEST 2021

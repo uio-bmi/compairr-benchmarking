@@ -1,0 +1,45 @@
+
+#1. 1000 repertoires 1e6 sequences -d 0 -t 8 compairr version 1.3.1
+exitcode 0
+user     2165.65
+system   433.62
+elapsed  17:47.21
+maxrss   95269368
+avgtext  0
+avgdata  0
+CPU      243%
+inputs   0
+outputs  9912
+major    0
+minor    53374197
+swaps    0
+
+#2. 1000 repertoires 1e6 sequences -d 0 -t 8 compairr version 1.3.1
+exitcode 0
+user     2247.32
+system   460.42
+elapsed  18:35.16
+maxrss   95269512
+avgtext  0
+avgdata  0
+CPU      242%
+inputs   0
+outputs  9912
+major    0
+minor    58802419
+swaps    0
+
+#3. 1000 repertoires 1e6 sequences -d 0 -t 8 compairr version 1.3.1
+exitcode 0
+user     2301.14
+system   501.25
+elapsed  20:14.17
+maxrss   95269272
+avgtext  0
+avgdata  0
+CPU      230%
+inputs   0
+outputs  9912
+major    0
+minor    109068671
+swaps    0

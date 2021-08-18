@@ -1,0 +1,57 @@
+CompAIRR 1.3.1 - Comparison of Adaptive Immune Receptor Repertoires
+https://github.com/uio-bmi/compairr
+
+Start time:        Wed Jun 30 15:48:17 CEST 2021
+Command (m/c):     Overlap
+Repertoire set 1:  /storage/lonnekes/compairr_benchmark/compairr_data/1e4/10/repertoires_1e4_10.tsv
+Repertoire set 2:  (same as set 1)
+Nucleotides (n):   No
+Differences (d):   0
+Indels (i):        No
+Ignore counts (f): No
+Ignore genes (g):  Yes
+Threads (t):       1
+Output file (o):   /storage/lonnekes/compairr_benchmark/output/tool_outputs/compairr/output/1e4_10_d0_t1_repetition3.tsv
+Output format (a): Matrix
+Summands (s):      Product
+Pairs file (p):    (none)
+Log file (l):      tool_outputs/compairr/log/1e4_10_d0_t1_repetition3.log
+
+Immune receptor repertoire set 1
+
+Reading sequences: 100% (0s)
+Sequences:         100000
+Residues:          2070974
+Shortest:          4
+Longest:           51
+Average length:    20.7
+Repertoires:       10
+Indexing:          100% (0s)
+Sorting:           100% (0s)
+
+Repertoires:
+  # Sequences  Count Repertoire ID
+  1     10000  10000 rep_1
+  2     10000  10000 rep_10
+  3     10000  10000 rep_2
+  4     10000  10000 rep_3
+  5     10000  10000 rep_4
+  6     10000  10000 rep_5
+  7     10000  10000 rep_6
+  8     10000  10000 rep_7
+  9     10000  10000 rep_8
+ 10     10000  10000 rep_9
+Sum    100000 100000
+
+Immune receptor repertoire set 2
+
+Set 2 is identical to set 1
+
+Unique V genes:    49
+Unique J genes:    6
+Computing hashes:  100% (0s)
+Hashing sequences: 100% (0s)
+Analysing:         100% (0s)
+Writing results:   100% (0s)
+
+End time:          Wed Jun 30 15:48:17 CEST 2021

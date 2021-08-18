@@ -1,0 +1,45 @@
+
+#1. 1000 repertoires 1e5 sequences
+exitcode 0
+user     57597.93
+system   1447.66
+elapsed  16:32:27
+maxrss   36041784
+avgtext  0
+avgdata  0
+CPU      99%
+inputs   21270144
+outputs  40880
+major    7
+minor    24161114
+swaps    0
+
+#2. 1000 repertoires 1e5 sequences
+exitcode 0
+user     23929.48
+system   417.60
+elapsed  6:48:37
+maxrss   36085972
+avgtext  0
+avgdata  0
+CPU      99%
+inputs   21270224
+outputs  40880
+major    0
+minor    16877090
+swaps    0
+
+#3. 1000 repertoires 1e5 sequences
+exitcode 0
+user     20872.49
+system   335.78
+elapsed  5:54:56
+maxrss   36047852
+avgtext  0
+avgdata  0
+CPU      99%
+inputs   0
+outputs  40880
+major    0
+minor    15087996
+swaps    0

@@ -1,0 +1,45 @@
+
+#1. 10 repertoires 1e5 sequences -d 2 -t 8 compairr version 1.3.1
+exitcode 0
+user     438.24
+system   0.24
+elapsed  0:55.60
+maxrss   196368
+avgtext  0
+avgdata  0
+CPU      788%
+inputs   0
+outputs  24
+major    0
+minor    117016
+swaps    0
+
+#2. 10 repertoires 1e5 sequences -d 2 -t 8 compairr version 1.3.1
+exitcode 0
+user     457.42
+system   0.31
+elapsed  0:58.06
+maxrss   198496
+avgtext  0
+avgdata  0
+CPU      788%
+inputs   0
+outputs  24
+major    0
+minor    195441
+swaps    0
+
+#3. 10 repertoires 1e5 sequences -d 2 -t 8 compairr version 1.3.1
+exitcode 0
+user     437.47
+system   0.47
+elapsed  0:55.50
+maxrss   194556
+avgtext  0
+avgdata  0
+CPU      789%
+inputs   0
+outputs  24
+major    0
+minor    185502
+swaps    0

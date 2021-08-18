@@ -1,0 +1,46 @@
+
+#1. 100 repertoires 1e4 sequences
+exitcode 0
+user     452.27
+system   16.98
+elapsed  1:13.47
+maxrss   10444652
+avgtext  0
+avgdata  0
+CPU      638%
+inputs   0
+outputs  2424
+major    0
+minor    6275400
+swaps    0
+
+#2. 100 repertoires 1e4 sequences
+exitcode 0
+user     465.30
+system   22.36
+elapsed  1:23.03
+maxrss   10408768
+avgtext  0
+avgdata  0
+CPU      587%
+inputs   0
+outputs  2416
+major    0
+minor    7151079
+swaps    0
+
+#3. 100 repertoires 1e4 sequences
+exitcode 0
+user     435.29
+system   27.28
+elapsed  1:36.86
+maxrss   10444968
+avgtext  0
+avgdata  0
+CPU      477%
+inputs   0
+outputs  2424
+major    0
+minor    4875042
+swaps    0
+

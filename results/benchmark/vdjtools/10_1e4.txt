@@ -1,0 +1,15 @@
+
+#1. 10 repertoires 1e4 sequences
+exitcode 0
+user     14.38
+system   0.42
+elapsed  0:03.07
+maxrss   1245564
+avgtext  0
+avgdata  0
+CPU      481%
+inputs   21792
+outputs  104
+major    0
+minor    33432
+swaps    0

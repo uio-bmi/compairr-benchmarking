@@ -1,0 +1,459 @@
+
+#1. 100 repertoires 1e5 sequences
+Loading required package: ggplot2
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: dtplyr
+Loading required package: data.table
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+Loading required package: patchwork
+
+== Step 1/3: loading repertoire files... ==
+
+Processing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100/" ...
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//metadata.txt" -- metadata
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_1.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_10.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_100.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_11.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_12.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_13.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_14.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_15.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_16.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_17.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_18.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_19.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_2.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_20.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_21.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_22.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_23.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_24.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_25.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_26.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_27.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_28.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_29.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_3.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_30.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_31.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_32.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_33.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_34.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_35.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_36.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_37.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_38.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_39.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_4.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_40.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_41.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_42.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_43.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_44.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_45.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_46.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_47.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_48.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_49.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_5.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_50.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_51.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_52.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_53.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_54.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_55.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_56.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_57.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_58.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_59.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_6.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_60.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_61.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_62.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_63.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_64.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_65.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_66.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_67.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_68.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_69.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_7.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_70.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_71.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_72.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_73.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_74.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_75.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_76.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_77.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_78.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_79.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_8.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_80.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_81.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_82.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_83.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_84.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_85.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_86.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_87.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_88.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_89.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_9.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_90.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_91.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_92.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_93.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_94.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_95.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_96.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_97.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_98.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_99.tsv" -- immunarch
+
+== Step 2/3: checking metadata files and merging files... ==
+
+Processing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100/" ...
+  -- Everything is OK!
+
+== Step 3/3: processing paired chain data... ==
+
+Done!
+
+exitcode 0
+user     133.33
+system   15.19
+elapsed  2:14.13
+maxrss   4369652
+avgtext  0
+avgdata  0
+CPU      110%
+inputs   0
+outputs  96
+major    0
+minor    1295175
+swaps    0
+
+#2. 100 repertoires 1e5 sequences
+Loading required package: ggplot2
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: dtplyr
+Loading required package: data.table
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+Loading required package: patchwork
+
+== Step 1/3: loading repertoire files... ==
+
+Processing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100/" ...
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//metadata.txt" -- metadata
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_1.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_10.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_100.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_11.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_12.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_13.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_14.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_15.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_16.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_17.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_18.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_19.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_2.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_20.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_21.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_22.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_23.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_24.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_25.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_26.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_27.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_28.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_29.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_3.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_30.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_31.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_32.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_33.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_34.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_35.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_36.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_37.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_38.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_39.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_4.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_40.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_41.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_42.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_43.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_44.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_45.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_46.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_47.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_48.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_49.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_5.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_50.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_51.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_52.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_53.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_54.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_55.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_56.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_57.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_58.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_59.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_6.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_60.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_61.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_62.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_63.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_64.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_65.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_66.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_67.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_68.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_69.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_7.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_70.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_71.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_72.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_73.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_74.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_75.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_76.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_77.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_78.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_79.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_8.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_80.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_81.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_82.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_83.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_84.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_85.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_86.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_87.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_88.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_89.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_9.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_90.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_91.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_92.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_93.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_94.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_95.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_96.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_97.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_98.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_99.tsv" -- immunarch
+
+== Step 2/3: checking metadata files and merging files... ==
+
+Processing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100/" ...
+  -- Everything is OK!
+
+== Step 3/3: processing paired chain data... ==
+
+Done!
+
+exitcode 0
+user     128.23
+system   13.26
+elapsed  2:13.13
+maxrss   4541228
+avgtext  0
+avgdata  0
+CPU      106%
+inputs   2341784
+outputs  200
+major    0
+minor    1223298
+swaps    0
+
+#3. 100 repertoires 1e5 sequences
+Loading required package: ggplot2
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: dtplyr
+Loading required package: data.table
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+Loading required package: patchwork
+
+== Step 1/3: loading repertoire files... ==
+
+Processing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100/" ...
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//metadata.txt" -- metadata
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_1.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_10.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_100.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_11.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_12.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_13.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_14.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_15.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_16.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_17.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_18.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_19.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_2.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_20.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_21.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_22.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_23.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_24.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_25.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_26.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_27.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_28.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_29.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_3.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_30.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_31.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_32.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_33.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_34.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_35.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_36.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_37.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_38.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_39.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_4.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_40.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_41.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_42.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_43.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_44.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_45.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_46.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_47.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_48.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_49.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_5.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_50.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_51.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_52.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_53.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_54.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_55.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_56.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_57.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_58.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_59.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_6.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_60.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_61.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_62.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_63.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_64.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_65.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_66.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_67.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_68.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_69.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_7.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_70.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_71.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_72.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_73.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_74.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_75.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_76.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_77.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_78.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_79.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_8.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_80.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_81.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_82.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_83.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_84.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_85.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_86.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_87.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_88.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_89.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_9.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_90.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_91.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_92.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_93.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_94.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_95.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_96.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_97.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_98.tsv" -- immunarch
+  -- Parsing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100//rep_99.tsv" -- immunarch
+
+== Step 2/3: checking metadata files and merging files... ==
+
+Processing "/storage/lonnekes/compairr_benchmark/immunarch_data/1e5/100/" ...
+  -- Everything is OK!
+
+== Step 3/3: processing paired chain data... ==
+
+Done!
+
+exitcode 0
+user     128.90
+system   14.13
+elapsed  2:08.92
+maxrss   4487832
+avgtext  0
+avgdata  0
+CPU      110%
+inputs   0
+outputs  208
+major    0
+minor    1257485
+swaps    0

@@ -1,0 +1,45 @@
+
+#1. 100 repertoires 1e5 sequences -d 1 -t 8 -i
+exitcode 0
+user     135.06
+system   1.31
+elapsed  0:21.27
+maxrss   878116
+avgtext  0
+avgdata  0
+CPU      641%
+inputs   892376
+outputs  120
+major    0
+minor    749324
+swaps    0
+
+#2. 100 repertoires 1e5 sequences -d 1 -t 8 -i
+exitcode 0
+user     132.79
+system   1.06
+elapsed  0:20.87
+maxrss   878232
+avgtext  0
+avgdata  0
+CPU      641%
+inputs   0
+outputs  120
+major    0
+minor    579490
+swaps    0
+
+#3. 100 repertoires 1e5 sequences -d 1 -t 8 -i
+exitcode 0
+user     149.99
+system   1.76
+elapsed  0:23.14
+maxrss   878872
+avgtext  0
+avgdata  0
+CPU      655%
+inputs   0
+outputs  120
+major    0
+minor    697862
+swaps    0

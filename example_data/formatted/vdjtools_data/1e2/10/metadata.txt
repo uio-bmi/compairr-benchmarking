@@ -1,0 +1,11 @@
+#file.name	sample.id
+/Users/lonneke/PycharmProjects/compairr-benchmarking/example_data/formatted/vdjtools_data/1e2/10/rep_67.tsv	rep_67
+/Users/lonneke/PycharmProjects/compairr-benchmarking/example_data/formatted/vdjtools_data/1e2/10/rep_73.tsv	rep_73
+/Users/lonneke/PycharmProjects/compairr-benchmarking/example_data/formatted/vdjtools_data/1e2/10/rep_98.tsv	rep_98
+/Users/lonneke/PycharmProjects/compairr-benchmarking/example_data/formatted/vdjtools_data/1e2/10/rep_4.tsv	rep_4
+/Users/lonneke/PycharmProjects/compairr-benchmarking/example_data/formatted/vdjtools_data/1e2/10/rep_5.tsv	rep_5
+/Users/lonneke/PycharmProjects/compairr-benchmarking/example_data/formatted/vdjtools_data/1e2/10/rep_99.tsv	rep_99
+/Users/lonneke/PycharmProjects/compairr-benchmarking/example_data/formatted/vdjtools_data/1e2/10/rep_72.tsv	rep_72
+/Users/lonneke/PycharmProjects/compairr-benchmarking/example_data/formatted/vdjtools_data/1e2/10/rep_66.tsv	rep_66
+/Users/lonneke/PycharmProjects/compairr-benchmarking/example_data/formatted/vdjtools_data/1e2/10/rep_58.tsv	rep_58
+/Users/lonneke/PycharmProjects/compairr-benchmarking/example_data/formatted/vdjtools_data/1e2/10/rep_70.tsv	rep_70
