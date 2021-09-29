@@ -13,3 +13,33 @@ outputs  39128
 major    8
 minor    1052765471
 swaps    0
+
+#2. 1000 repertoires 1e6 sequences
+exitcode 0
+user     392789.47
+system   7168.18
+elapsed  111:46:41
+maxrss   303606264
+avgtext  0
+avgdata  0
+CPU      99%
+inputs   212802720
+outputs  39128
+major    2613
+minor    3501969425
+swaps    0
+
+#3. 1000 repertoires 1e6 sequences
+exitcode 0
+user     390781.06
+system   1014.38
+elapsed  109:37:39
+maxrss   303930400
+avgtext  0
+avgdata  0
+CPU      99%
+inputs   196940344
+outputs  39128
+major    54
+minor    286740933
+swaps    0
