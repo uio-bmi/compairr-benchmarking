@@ -78,13 +78,13 @@ be found in the folder [figures](results/figures).
 
 ## References
 
-1: Rognes T, Scheffer L, Greiff V, Sandve GK (2021) CompAIRR: ultra-fast comparison of adaptive immune receptor repertoires by exact and approximate sequence matching. (in prep.)
+1: Rognes T, Scheffer L, Greiff V, Sandve GK (2021) "CompAIRR: ultra-fast comparison of adaptive immune receptor repertoires by exact and approximate sequence matching." BiorXiv: https://doi.org/10.1101/2021.10.30.466600
 
-2: Shugay M, Bagaev DV, Turchaninova MA, Bolotin DA, Britanova OV, Putintseva EV, et al. (2015) VDJtools: Unifying Post-analysis of T Cell Receptor Repertoires. PLoS Comput Biol 11(11): e1004503. https://doi.org/10.1371/journal.pcbi.1004503
+2: Shugay M, Bagaev DV, Turchaninova MA, Bolotin DA, Britanova OV, Putintseva EV, et al. (2015) "VDJtools: Unifying Post-analysis of T Cell Receptor Repertoires." PLoS Comput Biol 11(11): e1004503. https://doi.org/10.1371/journal.pcbi.1004503
 
-3: Nazarov, Vadim I., Vasily O. Tsvetkov, and Eugene Rumynskiy. 2019. Immunarch: An R Package for Painless Bioinformatics Analysis of T-Cell and B-Cell Immune Repertoires (version 0.6.5). R. ImmunoMind. https://doi.org/10.5281/zenodo.3367200.
+3: Nazarov, Vadim I., Vasily O. Tsvetkov, and Eugene Rumynskiy. (2019) "Immunarch: An R Package for Painless Bioinformatics Analysis of T-Cell and B-Cell Immune Repertoires (version 0.6.5)." R. ImmunoMind. https://doi.org/10.5281/zenodo.3367200.
 
-4: Cédric R. Weber et al. immuneREF: Reference-based similarity comparison of immune repertoires (in prep.)
+4: Cédric R. Weber et al. immuneREF: Reference-based similarity comparison of immune repertoires (in prep.) https://doi.org/10.5281/zenodo.5522406
 
-5: Sethna, Zachary, Yuval Elhanati, Curtis G. Callan, Aleksandra M. Walczak, and Thierry Mora. 2019. “OLGA: Fast Computation of Generation Probabilities of B- and T-Cell Receptor Amino Acid Sequences and Motifs.” Bioinformatics 35 (17): 2974–81. https://doi.org/10.1093/bioinformatics/btz035.
+5: Sethna, Zachary, Yuval Elhanati, Curtis G. Callan, Aleksandra M. Walczak, and Thierry Mora. (2019) "OLGA: Fast Computation of Generation Probabilities of B- and T-Cell Receptor Amino Acid Sequences and Motifs." Bioinformatics 35 (17): 2974–81. https://doi.org/10.1093/bioinformatics/btz035.
 
