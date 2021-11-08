@@ -15,6 +15,8 @@ The contents of this repository are as follows:
 - [results](results) contains the original benchmarking results files (time + memory usage, CompAIRR log files) which were used as an input to create figures (step 4)
 
 
+Benchmarking was performed on a server with two AMD EPYC 7742 64-core processors and 2015 GB RAM running Red Hat Enterprise Linux 8.4.
+
 ## Benchmarking instructions
 
 ### Step 1: Generate sequences using OLGA
